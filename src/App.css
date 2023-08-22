@@ -5,38 +5,44 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  color: #2d339f;
+  text-transform: uppercase;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th {
+  color: #2d339f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.headContainer {
+  width: 150px;
+  padding: 20px 0;
 }
 
-.card {
-  padding: 2em;
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: aliceblue;
+  cursor: pointer;
+  color: #646cff;
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+  background-color: #646cff;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: #646cff90;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #646cff;
+  color: white;
 }
