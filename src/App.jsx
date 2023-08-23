@@ -3,8 +3,8 @@ import actors from "./contacts.json"
 import { useState } from 'react';
 
 function App() {
-  const fiveContacts = actors.slice(0, 5)
-  const [contacts, setContacts] = useState(fiveContacts)
+ 
+  const [contacts, setContacts] = useState(actors.slice(0, 5))
 
   function removeContact(actorId) {
     const removedActorArray = contacts.filter((actor) => {
@@ -69,8 +69,8 @@ function App() {
         </thead>
 
         <tbody>
-          {contacts.map((actor) => (
-          <tr>
+          {contacts.map((actor, i) => (
+          <tr key={i}>
             <td><img height="120px" src={actor.pictureUrl} alt="Actor's image" /></td>
             <td>{actor.name}</td>
             <td>{(actor.popularity).toFixed(2)}</td>
