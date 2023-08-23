@@ -26,7 +26,7 @@ function App() {
     setContacts(resultArray)
   }
   
-  function sortByName() {
+  function sortByName() { // A -> B, if we want to sort it B -> A, we change the -1/1
     const sortingName = contacts.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
@@ -41,7 +41,7 @@ function App() {
     setContacts(sortedName)
   }
 
-  function sortByPopularity() {
+  function sortByPopularity() { // we could apply same method as sortByName, and then swap the -1/1 to do ascending or descending
     const sortingPopularity = contacts.sort((a, b) => b.popularity - a.popularity)
 
     const sortedPopularity = [...sortingPopularity]
